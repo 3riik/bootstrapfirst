@@ -1,0 +1,135 @@
+/*
+Theme Name: bootstrapfirst
+Author: 3riik
+Version: 1.0
+*/
+body {
+	background-color: #555;
+    
+	color: white;
+}
+.clear-margin{
+	margin: 0;
+}
+.container {
+	width: 100%;
+}
+/*Header*/
+.site-header {
+	background-color: rgb(138, 6, 6); 
+	padding: 10px 20px 1px 20px;
+	border-bottom: 1px solid #333;
+}
+.site-header h1 {
+	margin-top: 0;
+	font-family: 'Cinzel', serif;
+}
+.site-header h1 a{
+	color: #8BC410;
+	margin-bottom: 0;
+	text-decoration: none;	
+}
+.site-header h5 {
+	color: #EEE;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+/*Header Navigation*/
+
+.nav li a {
+	color: #222;	
+	
+}
+.nav li a:hover {
+	border-color: transparent;
+	color: #FFF;
+}
+.nav-tabs li.active a {
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	color: #EEE;
+}
+.nav-tabs li.active a:hover {
+	color: #EEE;
+	background-color: transparent;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+}
+.nav-tabs li a {
+	margin-right:0;
+}
+.nav-tabs {
+	border-bottom: 1px solid #333;
+}
+.nav li a:hover, .nav li a:link {
+	background-color: transparent;
+}
+.nav li.active{
+	background-color: rgb(138, 6, 6); 
+	border-radius: 5px 5px 0 0;
+}
+
+.header-menu{
+	padding: 20px 0 0 0;
+	height: 100%;
+	margin-left: -0;
+	/*Gradient*/
+	background: rgba(89,138,11,1);
+	background: -moz-linear-gradient(left, rgba(89,138,11,1) 0%, rgba(183,209,142,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(89,138,11,1)), color-stop(100%, rgba(183,209,142,1)));
+	background: -webkit-linear-gradient(left, rgba(89,138,11,1) 0%, rgba(183,209,142,1) 100%);
+	background: -o-linear-gradient(left, rgba(89,138,11,1) 0%, rgba(183,209,142,1) 100%);
+	background: -ms-linear-gradient(left, rgba(89,138,11,1) 0%, rgba(183,209,142,1) 100%);
+	background: linear-gradient(to right, rgba(89,138,11,1) 0%, rgba(183,209,142,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#598a0b', endColorstr='#b7d18e', GradientType=1 );
+	font-family: 'Caesar Dressing', cursive;
+	font-size: 25px;
+}
+/*Fade banner*/
+.fade-in {
+	opacity: 1.0;
+	transition: opacity 2s ease-in-out;
+	-moz-transition: opacity 2s ease-in-out;
+	-webkit-transition: opacity 2s ease-in-out;	
+}
+.out{
+	opacity: 0;
+}
+.fade-out {
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+	-moz-transition: opacity 2s ease-in-out;
+	-webkit-transition: opacity 2s ease-in-out;	
+}
+
+#headerImg{
+	height: 25vw;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	border-top: 1px solid #333;
+	border-bottom: 2px solid #333;
+}
+#headerImg img{
+	position: absolute;
+    margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+}
+
+/*Content*/
+#content {
+	background-color: rgb(138, 6, 6); 
+	margin-bottom: 10px;
+	border-bottom: 1px solid #333;
+}
+#content h2 a{
+	color: white;
+}
+  
