@@ -19,7 +19,6 @@ $query_images_args = array(
 );
 
 $query_images = new WP_Query( $query_images_args );
-
 $images = array();
 foreach ( $query_images->posts as $image ) {
 	$images[] = wp_get_attachment_url( $image->ID );
@@ -28,35 +27,10 @@ wp_reset_postdata();
 	
 ?>
 <script>
-jQuery.noConflict()(function ($) {
- $(document).ready(function(){
-	
-	var count = 1;
-	var imagesCount = <?= count($images); ?>;
-	function fadeOut(id) {
-			$(id).addClass('fade-out');
-			$(id).removeClass('fade-in');
-	}
-	function fadeIn(id) {
-			$(id).removeClass('out');
-			$(id).addClass('fade-in');
-			$(id).removeClass('fade-out');
-	}
-	function transition() {
-		
-		if (count == (imagesCount)){
-			fadeOut("#header".concat(count));
-			count = 1;
-			fadeIn("#header".concat(count));
-		} else {
-			fadeOut("#header".concat(count));
-			fadeIn("#header".concat(++count));
-		}
-	}
-	window.setInterval(transition, 8000);
-});
-});
+
+
 </script>
+<div class="container-fluid">
 	<div class="row">
 	<div id="headerImg" class="col-sm-12">
 		<?php
@@ -70,22 +44,20 @@ jQuery.noConflict()(function ($) {
 
 	</div>
 	</div>
+	
 			<!-- site-header -->
-			<header class="site-header">
-				<div class="row">
-					<div class="col-sm-12">
+				<div class="row site-header">
+					<div class="col-xs-12 col-sm-12">
 						<h1><a href="<?= home_url();?>"><?php bloginfo('name'); ?></a></h1>
 						<h5><?php bloginfo('description');?></h5>
 					</div>
 				</div>
 				
-			</header>
 			<!-- /site-header -->		
-	<div class="container clear-margin">
 	
 		<!-- row -->
 		<div class="row">
-			<div class="col-sm-12 header-menu">
+			<div class="col-xs-12 col-sm-12"   id = "header-menu">
 				<?php 
 				
 					$args = array(

@@ -7,11 +7,11 @@ get_header(); ?>
 		<!-- main-column -->
 		<div class="row">
 			<!-- content -->
-			<div id="content" class="col-sm-12">
+			<div id="content" class="col-xs-12 col-sm-12">
 			<?php
 				
 				$menu = new WP_Query(array('post_type' => 'page',
-											'post__in' => array(98,56,46,38)
+											'post__in' => array(28,21,38,35)
 										));
 				if ($menu->have_posts()) :
 				while ($menu->have_posts()) : $menu->the_post();?>
@@ -28,7 +28,8 @@ get_header(); ?>
 				endif;
 			?>	
 			<!-- /content -->
-		</div><!-- /main-column -->
+			</div><!-- /main-column -->
+		</div>	
 		
 	
 	

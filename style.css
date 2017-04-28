@@ -3,21 +3,23 @@ Theme Name: bootstrapfirst
 Author: 3riik
 Version: 1.0
 */
+
+/* General settings */
 body {
 	background-color: #555;
-    
 	color: white;
 }
 .clear-margin{
 	margin: 0;
 }
 .container {
-	width: 100%;
+}
+.hidden {
+	display: none;
 }
 /*Header*/
 .site-header {
 	background-color: rgb(138, 6, 6); 
-	padding: 10px 20px 1px 20px;
 	border-bottom: 1px solid #333;
 }
 .site-header h1 {
@@ -37,14 +39,22 @@ body {
 }
 /*Header Navigation*/
 
+/* Bootstrap nav customization */
 .nav li a {
-	color: #222;	
-	
+	color: #222;		
 }
 .nav li a:hover {
 	border-color: transparent;
 	color: #FFF;
 }
+.nav li a:hover, .nav li a:link {
+	background-color: transparent;
+}
+.nav li.active{
+	background-color: rgb(138, 6, 6); 
+	border-radius: 5px 5px 0 0;
+}
+
 .nav-tabs li.active a {
 	border-top: 1px solid #333;
 	border-left: 1px solid #333;
@@ -64,15 +74,8 @@ body {
 .nav-tabs {
 	border-bottom: 1px solid #333;
 }
-.nav li a:hover, .nav li a:link {
-	background-color: transparent;
-}
-.nav li.active{
-	background-color: rgb(138, 6, 6); 
-	border-radius: 5px 5px 0 0;
-}
-
-.header-menu{
+/* Block where menu is*/
+#header-menu{
 	padding: 20px 0 0 0;
 	height: 100%;
 	margin-left: -0;
@@ -104,7 +107,6 @@ body {
 	-moz-transition: opacity 2s ease-in-out;
 	-webkit-transition: opacity 2s ease-in-out;	
 }
-
 #headerImg{
 	height: 25vw;
 	margin: 0 auto;
